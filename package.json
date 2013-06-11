@@ -1,0 +1,23 @@
+{
+  "name": "sample-azure-node-version",
+  "version": "0.0.1",
+  "description": "testing out node on azure",
+  "main": "app.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/staxmanade/sample-azure-node-version.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "9517a840b8dd15e1142f5e83696564a1b5a2272b",
+  "bugs": {
+    "url": "https://github.com/staxmanade/sample-azure-node-version/issues"
+  }
+}
