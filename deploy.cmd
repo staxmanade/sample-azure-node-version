@@ -97,6 +97,26 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
+echo ************** call node --version
+call node --version
+
+echo ************** call node --version
+call !NPM_CMD! install --production
+ 
+:: 4. Run our grunt task
+
+:: 4.1 We can't install grunt-cli globally - so intall it locally
+call !NPM_CMD! install grunt-cli
+
+:: 4.2 
+::
+:: NOTE: this won't work as it will not run with the package.json configure 
+:: 0.8.x version of node and will instead run with the 0.6.x version
+:: call node ./node_modules/grunt-cli/bin/grunt release
+:: 
+:: Let's manually call grunt with the correct version of node (using the "!NODE_EXE!" variable)
+call "!NODE_EXE!" ./node_modules/grunt-cli/bin/grunt release
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 goto end

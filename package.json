@@ -4,6 +4,7 @@
   "description": "testing out node on azure",
   "main": "app.js",
   "dependencies": {
+    "grunt": "~0.4.1"
   },
   "devDependencies": {},
   "scripts": {
